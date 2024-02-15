@@ -13,7 +13,7 @@
     <!-- Main Section -->
     <section class="flex flex-col md:flex-row mt-10 ">
         <!-- Calcuation section -->
-        <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <!-- Triangle calculation -->
             <div class="card w-96 bg-base-100 shadow-xl border border-2 border-white">
                 <figure class="px-10 pt-10">
@@ -60,7 +60,7 @@
                     </div>
                 </div>
             </div>
-            <!--  rectangle calculation -->
+            <!--  parallelogram calculation -->
             <div class="card w-96 bg-base-100 shadow-xl border border-2 border-white">
                 <figure class="px-10 pt-10">
                     <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl" />
@@ -83,6 +83,75 @@
                     </div>
                 </div>
             </div>
+            <!--  rhombus calculation -->
+            <div class="card w-96 bg-base-100 shadow-xl border border-2 border-white">
+                <figure class="px-10 pt-10">
+                    <img src="images/rhombus.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Find your Rhombus Area</h2>
+                    <p>Area (A) = 0.5 x d1 x d2</p>
+                    <div class="flex"><input id="rhombus-d1-value" type="text" placeholder="d1">
+                        <p class="ml-4">cm</p>
+                    </div>
+                    <div class="flex"><input id="rhombus-d2-value" type="text" placeholder="d2">
+                        <p class="ml-4">cm</p>
+                    </div>
+                    <div>
+                        <p class="text-xl">Area = <span id="rhombus-area"></span> <span>cm</span><sup>2</sup></p>
+                    </div>
+               
+                    <div class="card-actions">
+                        <button class="btn btn-primary" onclick="rhombusAreaCalculation()">Calculate Now</button>
+                    </div>
+                </div>
+            </div>
+            <!--  pentagon calculation -->
+            <div class="card w-96 bg-base-100 shadow-xl border border-2 border-white">
+                <figure class="px-10 pt-10">
+                    <img src="images/pentagon.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Find your Pentagon Area</h2>
+                    <p>Area (A) = 0.5 x p x b</p>
+                    <div class="flex"><input id="pentagon-p-value" type="text" placeholder="p">
+                        <p class="ml-4">cm</p>
+                    </div>
+                    <div class="flex"><input id="pentagon-b-value" type="text" placeholder="b">
+                        <p class="ml-4">cm</p>
+                    </div>
+                    <div>
+                        <p class="text-xl">Area = <span id="pentagon-area"></span> <span>cm</span><sup>2</sup></p>
+                    </div>
+               
+                    <div class="card-actions">
+                        <button class="btn btn-primary" onclick="pentagonAreaCalculation()">Calculate Now</button>
+                    </div>
+                </div>
+            </div>
+            <!--  ellipse calculation -->
+            <div class="card w-96 bg-base-100 shadow-xl border border-2 border-white">
+                <figure class="px-10 pt-10">
+                    <img src="images/ellipse.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Find your Ellipse Area</h2>
+                    <p>Area (A) = 0.5 x p x b</p>
+                    <div class="flex"><input id="ellipse-a-value" type="text" placeholder="a">
+                        <p class="ml-4">cm</p>
+                    </div>
+                    <div class="flex"><input id="ellipse-b-value" type="text" placeholder="b">
+                        <p class="ml-4">cm</p>
+                    </div>
+                    <div>
+                        <p class="text-xl">Area = <span id="ellipse-area"></span> <span>cm</span><sup>2</sup></p>
+                    </div>
+               
+                    <div class="card-actions">
+                        <button class="btn btn-primary" onclick="ellipseAreaCalculation()">Calculate Now</button>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Result section -->
         <div class="border border-2 border-white rounded-md p-4">
@@ -93,6 +162,9 @@
     <script src="script/triangle.js"></script>
     <script src="script/Rectangle.js"></script>
     <script src="script/Parallelogram.js"></script>
+    <script src="script/rhombus.js"></script>
+    <script src="script/pentagon.js"></script>
+    <script src="script/ellipse.js"></script>
 </body>
 
 </html>

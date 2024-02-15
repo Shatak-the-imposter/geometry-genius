@@ -8,12 +8,12 @@ function parallelogramAreaCalculation() {
     // get the hight value 
     const parallelogramHightInput = document.getElementById('parallelogram-hight-value')
     const parallelogramHightText = parallelogramHightInput.value;
-    const hight = parseFloat(parallelogramBaseText);
+    const hight = parseFloat(parallelogramHightText);
 
     //  calcuate the area
     const area = base * hight;
 
     //  display the are  
-    const parallelogramArea = document.getElementById('parallelogram-area')
+    const parallelogramArea = document.getElementById('parallelogram-area');
     parallelogramArea.innerText = area; 
 }
